@@ -9,26 +9,17 @@ namespace Bakery
         public int Quantity { get; set; }
 
         public Bread(int Quantity) {
-            Price = 5;
             Quantity = 0;
     
-        }
-
-        public void  DecidePrice(int getActualQuantity)  {
-            
-            AddQuantity(getActualQuantity);
-            AddTotalPrice(Price);
-            
-
-        }
-
-       public void AddQuantity(int getActualQuantity) {
-            Quantity += getActualQuantity;
-            
        }
+        public int  DecidePrice(int getActualQuantity)  {
+           return  AddQuantity(getActualQuantity);
+            
+        }
 
-       public void AddTotalPrice(int price) {
-           price = Price * Quantity;
+       public int AddQuantity(int getActualQuantity) {
+           return Quantity += getActualQuantity;
+            
        }
        
     }
