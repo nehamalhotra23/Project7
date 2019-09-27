@@ -21,9 +21,9 @@ class Program
         Bread newBread = new Bread(OrderNumber);
          
          if (OrderNumber == 2 || OrderNumber == 1) {
-           Console.WriteLine("$5");
-        } else if (OrderNumber > 2) {
-           Console.WriteLine(newBread.DecidePrice(OrderNumber * 5));
+           Console.WriteLine("Total Order price is $5");
+        } else if (OrderNumber >= 2) {
+           Console.WriteLine("Total Order Price is " + newBread.DecidePrice(OrderNumber * 5));
         }
             
        } else if (UserInput == "Pastery" || UserInput == "pastery") {
@@ -33,16 +33,10 @@ class Program
             Pastery newPastery = new Pastery(OrderNumberPastery);
 
             if(OrderNumberPastery <= 3 ) {
-                Console.WriteLine("$5");
+                Console.WriteLine("Total Price of order is $5");
             } else if (OrderNumberPastery > 3) {
-                Console.WriteLine(newPastery.DecidePasteryPrice(OrderNumberPastery * 2));
+             Console.WriteLine("Total order price is " + newPastery.DecidePasteryPrice(OrderNumberPastery * 2));
             }
-
-
-       }
-
-       
-    
-   
-       }
+ }
+ }
     }
