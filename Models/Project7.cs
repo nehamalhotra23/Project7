@@ -1,13 +1,25 @@
 using System;
-using System.Collections.Generic;
+
 
 namespace Bakery
 {
-    class Bread
+    public class Bread
     {
-        
-    }
-    class Pastery {
+        public int Price { get; set; }
+        public int Quantity { get; set; }
 
+        public Bread(int quantity) {
+            Price = price;
+            Ouantity = quantity;
+
+        }
+          
+        // public void DecidePrice(int quantity)  {
+        //     Price * quantity;
+
+        // }
+
+       
     }
+    
 }
