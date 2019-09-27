@@ -14,8 +14,7 @@ namespace Bakery
            return  AddQuantity(getActualQuantity);
             
         }
-
-       public int AddQuantity(int getActualQuantity) {
+        public int AddQuantity(int getActualQuantity) {
            return Quantity += getActualQuantity;
             
        }
@@ -29,14 +28,12 @@ namespace Bakery
 
         public Pastery(int PasteryQuantity) {
             PasteryQuantity = 0;
-    }
-
+        }
         public int  DecidePasteryPrice(int getActualQuantityPas)  {
-            
             return AddQuantityOfPastery(getActualQuantityPas);
         }
 
-       public int AddQuantityOfPastery(int getActualQuantityPas) {
+        public int AddQuantityOfPastery(int getActualQuantityPas) {
            return  PasteryQuantity += getActualQuantityPas;
             
        }

@@ -22,7 +22,7 @@ class Program
          if (OrderNumber == 2 || OrderNumber == 1) {
            Console.WriteLine("Total Order price is $5");
         } else if (OrderNumber >= 2) {
-           Console.WriteLine("Total Order Price is " + newBread.DecidePrice(OrderNumber * 5));
+           Console.WriteLine("Total Order Price is " + newBread.DecidePrice(OrderNumber * 5 * 75 / 100 - 1));
         }
             
        } else if (UserInput == "Pastery" || UserInput == "pastery") {
@@ -36,9 +36,7 @@ class Program
             } else if (OrderNumberPastery > 3) {
              Console.WriteLine("Total order price is " + newPastery.DecidePasteryPrice(OrderNumberPastery * 2));
             }
- 
     }
- 
  
     }
   }
