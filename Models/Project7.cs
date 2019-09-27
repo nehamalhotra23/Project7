@@ -15,7 +15,7 @@ namespace Bakery
 
         }
 
-        public void DecidePrice(int getActualQuantity)  {
+        public void  DecidePrice(int getActualQuantity)  {
             
             AddQuantity(getActualQuantity);
             AddTotalPrice(Price);
