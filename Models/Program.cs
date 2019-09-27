@@ -10,13 +10,13 @@ class Program
        Console.WriteLine("Offer Price: Buy 2 Get 1 Bread free and 'Buy 3 Pastery for $5' ");
        string OrderQuantity =  Console.ReadLine(); 
        int OrderNumber = int.Parse(OrderQuantity);
-    //    int result = OrderQuantity;
-       
-       if (OrderNumber > 2 ) {
+       Bread newBread = new Bread(OrderNumber);
+   
+       if (OrderNumber == 2 || OrderNumber == 1) {
            Console.WriteLine("$5");
+       } else if (OrderNumber > 2) {
+           return newBread.DecidePrice();
        }
-    //    } else {
-    //        return result;
-    //    }
+   
        }
     }
