@@ -15,7 +15,7 @@ class Program
        if (OrderNumber == 2 || OrderNumber == 1) {
            Console.WriteLine("$5");
        } else if (OrderNumber > 2) {
-           return newBread.DecidePrice();
+           newBread.DecidePrice(OrderNumber);
        }
    
        }
