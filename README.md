@@ -6,7 +6,7 @@
 
 ## Description
 
-_A console application Which returns price of total order. _
+_A console application Which returns total order price. _
 
 ## Setup/Installation Requirements
 
