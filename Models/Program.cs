@@ -30,6 +30,13 @@ class Program
             Console.WriteLine("How many pasteries you want?");
             string OrderQuantityTwo =  Console.ReadLine();
             int OrderNumberPastery = int.Parse(OrderQuantityTwo);
+            Pastery newPastery = new Pastery(OrderNumberPastery);
+
+            if(OrderNumberPastery <= 3 ) {
+                Console.WriteLine("$5");
+            } else if (OrderNumberPastery > 3) {
+                Console.WriteLine(newPastery.DecidePasteryPrice(OrderNumberPastery * 2));
+            }
 
 
        }

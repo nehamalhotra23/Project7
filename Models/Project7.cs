@@ -30,27 +30,17 @@ namespace Bakery
         public int PasteryQuantity { get; set; }
 
         public Pastery(int PasteryQuantity) {
-            PasteryPrice = 2;
             PasteryQuantity = 0;
-    
+    }
 
+        public int  DecidePasteryPrice(int getActualQuantityPas)  {
+            
+            return AddQuantityOfPastery(getActualQuantityPas);
         }
 
-        public void  DecidePasteryPrice(int getActualQuantityPas)  {
+       public int AddQuantityOfPastery(int getActualQuantityPas) {
+           return  PasteryQuantity += getActualQuantityPas;
             
-            AddQuantityOfPastery(getActualQuantityPas);
-            AddTotalPasteryPrice(PasteryPrice);
-            
-
-        }
-
-       public void AddQuantityOfPastery(int getActualQuantityPas) {
-            PasteryQuantity += getActualQuantityPas;
-            
-       }
-
-       public void AddTotalPasteryPrice(int pasteryPrice) {
-           pasteryPrice = PasteryPrice * PasteryQuantity;
        }
        
     }
