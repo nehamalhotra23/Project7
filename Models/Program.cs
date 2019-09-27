@@ -1,6 +1,5 @@
 using System;
 using Bakery;
-
 class Program
 {
     static void Main()
@@ -37,6 +36,9 @@ class Program
             } else if (OrderNumberPastery > 3) {
              Console.WriteLine("Total order price is " + newPastery.DecidePasteryPrice(OrderNumberPastery * 2));
             }
- }
- }
+ 
     }
+ 
+ 
+    }
+  }
