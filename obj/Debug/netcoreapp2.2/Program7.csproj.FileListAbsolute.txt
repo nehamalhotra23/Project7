@@ -1,0 +1,11 @@
+/Users/nehamalhotra/Desktop/Project7/bin/Debug/netcoreapp2.2/Program7.deps.json
+/Users/nehamalhotra/Desktop/Project7/bin/Debug/netcoreapp2.2/Program7.runtimeconfig.json
+/Users/nehamalhotra/Desktop/Project7/bin/Debug/netcoreapp2.2/Program7.runtimeconfig.dev.json
+/Users/nehamalhotra/Desktop/Project7/bin/Debug/netcoreapp2.2/Program7.dll
+/Users/nehamalhotra/Desktop/Project7/bin/Debug/netcoreapp2.2/Program7.pdb
+/Users/nehamalhotra/Desktop/Project7/obj/Debug/netcoreapp2.2/Program7.csprojAssemblyReference.cache
+/Users/nehamalhotra/Desktop/Project7/obj/Debug/netcoreapp2.2/Program7.csproj.CoreCompileInputs.cache
+/Users/nehamalhotra/Desktop/Project7/obj/Debug/netcoreapp2.2/Program7.AssemblyInfoInputs.cache
+/Users/nehamalhotra/Desktop/Project7/obj/Debug/netcoreapp2.2/Program7.AssemblyInfo.cs
+/Users/nehamalhotra/Desktop/Project7/obj/Debug/netcoreapp2.2/Program7.dll
+/Users/nehamalhotra/Desktop/Project7/obj/Debug/netcoreapp2.2/Program7.pdb
