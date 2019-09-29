@@ -21,11 +21,11 @@ class Program
         int OrderNumberPastery = int.Parse(OrderQuantityTwo);
         Pastery newPastery = new Pastery(OrderNumberPastery);
         int totalPricePastery = newPastery.DecidePasteryPrice(OrderNumberPastery * 2);
-        int totalPricebread = newBread.DecidePrice(OrderNumber * 5 * 75 / 100 + 1);
+        int totalPricebread = newBread.DecidePrice(OrderNumber * 5 * 75 / 100);
 
         if (OrderNumber < 2 ){
           Console.WriteLine("Total order price is " + (5 + totalPricePastery));
-        } else if (OrderNumber > 2) {
+        } else if (OrderNumber >= 2) {
          Console.WriteLine("Total Order Price is " +  (totalPricebread + totalPricePastery));
         } 
     }
