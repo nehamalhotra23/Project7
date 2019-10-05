@@ -4,37 +4,35 @@ namespace Bakery
     public class Bread
     {
         public int Quantity { get; set; }
+        public int Price { get; set;} = 5;
 
-        public Bread(int Quantity) {
-            Quantity = 0;
+        public Bread(int quantity) {
+            Quantity = quantity;
     
-       }
-        public int  DecidePrice(int getActualQuantity)  {
-           return  AddQuantity(getActualQuantity);
+        }
+        public int  DecidePrice()  {
+            return (Quantity * Price) - CalculateDiscount();
             
         }
-        public int AddQuantity(int getActualQuantity) {
-           return Quantity += getActualQuantity;
-            
-       }
+
+        public int CalculateDiscount() {
+            return (Quantity * Price * 75 /100);
+        }
+
        
     }
-
     public class Pastery 
     {
-        public int PasteryQuantity { get; set; }
+        public int Pquantity { get; set; }
+         public int Ppastery { get; set;} = 2;
 
-        public Pastery(int PasteryQuantity) {
-            PasteryQuantity = 0;
+        public Pastery(int pquantity) {
+            Pquantity = pquantity;
+          
         }
-        public int  DecidePasteryPrice(int getActualQuantityPas)  {
-            return AddQuantityOfPastery(getActualQuantityPas);
+        public int  DecidePasteryPrice()  {
+          return (Pquantity * Ppastery);
         }
-
-        public int AddQuantityOfPastery(int getActualQuantityPas) {
-           return  PasteryQuantity += getActualQuantityPas;
-            
-       }
        
     }
 }
